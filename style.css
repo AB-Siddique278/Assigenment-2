@@ -115,6 +115,10 @@ border-radius: 5px;
 
 /*product section*/
 
+.product-banner:hover img{
+    transform: scale(1.5);
+    transition: transform 1s ease-in-out ;
+}
 
 .product .product-banner img{
     width: 320px;
@@ -148,6 +152,7 @@ border-radius: 5px;
     padding: 10px;
     margin: 5%;
     border-radius: 10px;
+    box-shadow: rgb(128, 128, 128, 0.42) 5px 5px 20px;
    
     
     
@@ -167,6 +172,7 @@ border-radius: 5px;
 .product{
      
     padding-left: 4%;
+    
 }
 .all-Products{
     margin-right: -7%;
@@ -286,6 +292,7 @@ input[type=text], select, textarea {
     text-align: center;
     padding-bottom: 3%;
     padding-top: 3%;
+    width: 100%;
 
     
 }
@@ -361,15 +368,42 @@ input[type=text], select, textarea {
         grid-template-columns: repeat(1, 1fr);
         
     }
-   
+
+    /*see more Button mobile responsive*/
+
+   .last-boutton{
+    display: flex;
+    justify-content: flex-end;
+   }
+
+   .footer{
+    
+    width: 100%;
+
+    
+    }
+
+   .last-boutton{
+       display: flex;
+       justify-content: center;
+   }
 
 }
 
 @media screen and (max-width: 992px){
+    /*product section tablet responsive*/
     .all-Products{
         display: grid;
        
         grid-template-columns: repeat(1, 1fr);
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        flex-direction: column;
+        
 
         
         
@@ -380,5 +414,10 @@ input[type=text], select, textarea {
       margin-right: 5%;
 
   }
+
+  .last-boutton{
+    display: flex;
+    justify-content: center;
+}
 
 }
