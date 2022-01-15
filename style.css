@@ -91,6 +91,8 @@ border-radius: 5px;
 }
 .e-market-title{
     margin-bottom: 5%;
+    font-size: 30px;
+    
 }
 .slider-track{
     display: grid;
@@ -111,6 +113,7 @@ border-radius: 5px;
 .slider img{
     margin: 20px;
 }
+
 
 
 /********************************product section***********************/
